@@ -1,0 +1,139 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+ margin: 0;
+ padding: 0;
+}
+
+/* Set a consistent font family and background color */
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+ background-color: #333;
+ padding: 15px;
+ color: #fff;
+ display: flex;
+ align-items: center;
+}
+
+header a {
+ color: #fff;
+ text-decoration: none;
+ margin-right: 20px;
+}
+
+.logo {
+ width: 150px;
+}
+
+/* Property Details container styles */
+.property-details {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.property-name {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+ position: relative;
+}
+
+.slideshow {
+ display: flex;
+ overflow: hidden;
+}
+
+.slide {
+ width: 100%;
+ height: 300px;
+ object-fit: cover;
+ transition: transform 0.3s ease-in-out;
+}
+
+.prev, .next {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 24px;
+ cursor: pointer;
+ z-index: 1;
+}
+
+.prev {
+ left: 10px;
+}
+
+.next {
+ right: 10px;
+}
+
+/* Property Info styles */
+.property-info {
+ margin-top: 20px;
+ border-top: 1px solid #ddd;
+ padding-top: 20px;
+}
+
+.property-info p {
+ margin-bottom: 10px;
+}
+
+/* Property Description styles */
+.property-description {
+ margin-top: 20px;
+ padding-top: 20px;
+ border-top: 1px solid #ddd;
+}
+
+/* CTA Container styles */
+.cta-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 20px;
+}
+
+.btn-view-complete-details, .btn-save-property {
+ padding: 10px 20px;
+ font-size: 16px;
+ background-color: #007bff;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease-in-out;
+}
+
+.btn-view-complete-details:hover, .btn-save-property:hover {
+ background-color: #0056b3;
+}
+
+/* Contact Info styles */
+.contact-info {
+ margin-top: 20px;
+ border-top: 1px solid #ddd;
+ padding-top: 20px;
+}
+
+.contact-info p {
+ margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+ .property-info, .property-description, .cta-container, .contact-info {
+   margin-top: 10px;
+   padding-top: 10px;
+ }
+}
